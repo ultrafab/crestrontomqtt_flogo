@@ -1,0 +1,33 @@
+{
+  "name": "crestrontomqtt_flogo",
+  "type": "flogo:activity",
+  "ref": "github.com/ultrafab/crestrontomqtt_flogo",
+  "version": "0.0.1",
+  "title": "Nmea - Mqtt",
+    "description": "This activity convert a Crestron mqtt message to a new splitted and evaluated message",
+  "homepage": "https://github.com/ultrafab/crestrontomqtt_flogo",
+  "inputs":[
+    {
+      "name": "address",
+      "type": "string"
+    },
+    {
+      "name": "dbNo",
+      "type": "integer"
+    },
+    {
+      "name": "message",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mqtt_message",
+      "type": "string"
+    },
+    {
+      "name": "topic",
+      "type": "string"
+    }
+  ]
+}
